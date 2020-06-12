@@ -1,0 +1,27 @@
+-tie up code
+
+-modulate css
+
+-add JS calculation functions
+
+-add virtual dices
+
+-improve input  
+
+-debug input for mobile device
+
+-add nameboard
+
+-add scoreboard
+
+-add sheet adder 
+
+-add menu
+
+-you need to get better in design Polle!
+
+-find way to add p2p play (wifi intranet)
+
+
+
+LEARN MORE HTML CSS JS POLLE!

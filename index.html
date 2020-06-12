@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kniffelblock</title>
+      <meta charset="windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="./lib/jquery-1.12.4.js"></script>
+      <script src="./lib/jquery-ui.js"></script>
+
+
+ </head>
+   <body>
+  <!-- <a href="#" name="MicrosoftExcelButton"></a>-->
+     <div class="container">
+       <form><!--the form Tag is needed because
+     it makes the <button> element on the bottom related
+     to what form contains-->
+       <!-- The Row Number 0 -->
+         <table id="table" border="5"><!--Oldschool 3d frame-->
+
+                <tr>
+                    <th>Kniffel</th>
+
+                </tr>
+                <!-- End Row Number 0 -->
+
+                <tr>
+                    <th>Gewinnkarte</th>
+                    <td>Spiel 1</td>
+                    <td>Spiel 2</td>
+                    <td>Spiel 3</td>
+                    <td>Spiel 4</td>
+
+                </tr>
+
+                <tr>
+                    <th>1er</th>
+                    <td><input id="aEins" type="number" min="0" max="5" step="1" value="0"></td>
+                    <td><input id="aZwei" type="number" min="0" max="5" step="1" value="0"></td>
+                    <td><input id="aDrei" type="number" min="0" max="5" step="1" value="0"></td>
+                    <td><input id="aVier" type="number" min="0" max="5" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>2er</th>
+                    <td><input id="bEins" type="number" min="0" max="10" step="1" value="0"></td>
+                    <td><input id="bZwei" type="number" min="0" max="10" step="1" value="0"></td>
+                    <td><input id="bDrei" type="number" min="0" max="10" step="1" value="0"></td>
+                    <td><input id="bVier" type="number" min="0" max="10" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>3er</th>
+                    <td><input id="cEins" type="number" min="0" max="15" step="1" value="0"></td>
+                    <td><input id="cZwei" type="number" min="0" max="15" step="1" value="0"></td>
+                    <td><input id="cDrei" type="number" min="0" max="15" step="1" value="0"></td>
+                    <td><input id="cVier" type="number" min="0" max="15" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>4er</th>
+                    <td><input id="dEins" type="number" min="0" max="20" step="1" value="0"></td>
+                    <td><input id="dZwei" type="number" min="0" max="20" step="1" value="0"></td>
+                    <td><input id="dDrei" type="number" min="0" max="20" step="1" value="0"></td>
+                    <td><input id="dVier" type="number" min="0" max="20" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>5er</th>
+                    <td><input id="eEins" type="number" min="0" max="25" step="1" value="0"></td>
+                    <td><input id="eZwei" type="number" min="0" max="25" step="1" value="0"></td>
+                    <td><input id="eDrei" type="number" min="0" max="25" step="1" value="0"></td>
+                    <td><input id="eVier" type="number" min="0" max="25" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>6er</th>
+                    <td><input id="fEins" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="fZwei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="fDrei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="fVier" type="number" min="0" max="30" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th class="gesamt">Gesamt</th>
+                    <td><input id="gEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="gZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="gDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="gVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Bonus 35 ab 63 </th>
+                    <td><input id="hEins" type="number" min="0" max="35" step="35" value="0"></td>
+                    <td><input id="hZwei" type="number" min="0" max="35" step="35" value="0"></td>
+                    <td><input id="hDrei" type="number" min="0" max="35" step="35" value="0"></td>
+                    <td><input id="hVier" type="number" min="0" max="35" step="35" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Gesamt oberer Teil</th>
+                    <td><input id="iEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="iZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="iDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="iVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+<!-- the following row is a placeholder to mark the upper- and lower part -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>Dreierpasch</th>
+                    <td><input id="kEins" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="kZwei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="kDrei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="kVier" type="number" min="0" max="30" step="1" value="0"></td>
+                </tr>
+                <tr>
+                    <th>Viererpasch</th>
+                    <td><input id="lEins" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="lZwei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="lDrei" type="number" min="0" max="30" step="1" value="0"></td>
+                    <td><input id="lVier" type="number" min="0" max="30" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Full-House(25)</th>
+                    <td><input id="mEins" type="number" min="0" max="25" step="25" value="0"></td>
+                    <td><input id="mZwei" type="number" min="0" max="25" step="25" value="0"></td>
+                    <td><input id="mDrei" type="number" min="0" max="25" step="25" value="0"></td>
+                    <td><input id="mVier" type="number" min="0" max="25" step="25" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Kleine Straße(30)</th>
+                    <td><input id="nEins" type="number" min="0" max="30" step="30" value="0"></td>
+                    <td><input id="nZwei" type="number" min="0" max="30" step="30" value="0"></td>
+                    <td><input id="nDrei" type="number" min="0" max="30" step="30" value="0"></td>
+                    <td><input id="nVier" type="number" min="0" max="30" step="30" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Große Straße(40)</th>
+                    <td><input id="oEins" type="number" min="0" max="40" step="40" value="0"></td>
+                    <td><input id="oZwei" type="number" min="0" max="40" step="40" value="0"></td>
+                    <td><input id="oDrei" type="number" min="0" max="40" step="40" value="0"></td>
+                    <td><input id="oVier" type="number" min="0" max="40" step="40" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Kniffel(50)</th>
+                    <td><input id="pEins" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="pZwei" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="pDrei" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="pVier" type="number" min="0" max="50" step="50" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Chance (alle Augen zählen)</th>
+                    <td><input id="qEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="qZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="qDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="qVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>gesamter unterer Teil</th>
+                    <td><input id="rEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="rZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="rDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="rVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>gesamter oberer Teil</th>
+                    <td><input id="sEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="sZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="sDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="sVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th class = "endsumme">Endsumme</th>
+                    <td><input id="tEins" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="tZwei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="tDrei" type="number" min="0" max="999" step="1" value="0"></td>
+                    <td><input id="tVier" type="number" min="0" max="999" step="1" value="0"></td>
+                </tr>
+
+                <tr>
+                    <th>Punkte Extra-Kniffel</th>
+                    <td><input id="uEins" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="uZwei" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="uDrei" type="number" min="0" max="50" step="50" value="0"></td>
+                    <td><input id="uVier" type="number" min="0" max="50" step="50" value="0"></td>
+
+                </tr>
+
+            </table>
+          <button type="reset" value="Reset">Reset</button>
+        </form>
+      </div>
+
+</div>
+
+<!-- jQuerry Code for "accordion" collapsible menu.
+Attribute "collapsible" allows collapsing active sections
+(here´s just one). active (bool or int val) sets the
+section to be collapsed from start-->
+<script>
+$( function() {
+  $( "#accordion" ).accordion({
+
+    collapsible: true,
+    active: 1
+  });
+} );
+
+ </script>
+
+<div id="accordion" >
+
+    <h1 class= "help"> Kniffelregeln </h1>
+      <div>
+    <p>Kniffel-Regeln kurz erklärt
+Ziel des Spieles ist es möglichst viele Punkte zu „erwürfeln“. Es werden mit 5 Würfeln und einem Becher gewürfelt. Jeder Spieler hat drei Versuche sein jeweiliges Wurfziel zu erreichen. Dabei darf er passende Würfel herauslegen und mit den verbleibenden weiterspielen.
+</p>
+<p>
+Beispiel:
+</p>
+<p>
+Der Spieler würfelt: 1 6 3 5 6
+Er legt die zwei Sechsen beiseite und würfelt mit den verbleibenden drei Würfeln weiter
+</p>
+<p>
+Im zweiten Wurf erscheint: 1 3 6
+Er legt die Sechs beiseite und hat nun schon 3 Sechsen gesammelt
+</p>
+<p>
+Im dritten Wurf würfelt er 2 und 5
+Er kann nun im oberen Teil 18 in der „6er“ Reihe eintragen (3 x 6 = 18) oder unter „Dreierpasch“ im unteren Teil 25 eintragen (3 x 6 + 2 + 5)
+</p>
+<p>
+Im oberen Teil sollte man beachten, dass man einen Bonus erhält, wenn man insgesamt 63 oder mehr Punkte gesammelt hat. Die 63 ist aus folgendem Grund gewählt: Wenn man in jeder Reihe 3 der Zahlen gesammelt hat, ergibt die Endsumme 63. (3*1) + (3*2) + (3*3) + (3*4) + (3*5) + (3*6) = 63. Also passen Sie auf, wenn Sie bei einer Zahl weniger erreichen, müssen Sie mit einer anderen höheren Zahl 4 gleiche schaffen, um  wieder den Bonus zu bekommen.
+</p>
+<p>
+Dreierpasch
+Es müssen drei gleiche Zahlen erwürfelt werden. Als Ergebnis werden alle Augen notiert.
+</p>
+<p>
+Viererpasch
+Es müssen vier gleiche Zahlen erwürfelt werden. Als Ergebnis werden alle Augen notiert.
+</p>
+<p>
+Full House
+Es müssen 3 gleiche und 2 gleiche Zahlen erwürfelt werden. Es gibt 25 Punkte dafür.
+</p>
+<p>
+Kleine Straße
+Es müssen 4 aufeinanderfolgende Zahlenwerte erwürfelt werden (1, 2, 3, 4 oder 2, 3, 4, 5 oder 3, 4, 5, 6). Es gibt 30 Punkte dafür.
+</p>
+<p>
+Große Straße
+Es müssen 5 aufeinanderfolgende Zahlenwerte erwürfelt werden (1, 2, 3, 4, 5 oder 2, 3, 4, 5, 6). Es gibt 40 Punkte dafür.
+</p>
+<p>
+Knifffel
+Es müssen 5 gleiche Zahlenwerte erwürfelt werden. Es gibt 50 Punkte dafür.
+</p>
+<p>
+Sollten Sie einen zweiten Kniffel erwürfelt haben, bekommen Sie 50 Extra-Punkte und können einen Joker im unteren Teil einsetzen. Joker: Fehlt Ihnen zum Beispiel noch ein Full-House, können Sie dort 25 Punkte notieren.
+</p>
+<p>
+Kniffel online spielen
+Es gibt eine schöne Online-Quelle, wo Sie kostenlos Kniffel in Ihrem Browser online spielen können. Sie ist direkt vom Hersteller des Kniffel-Spiels:
+</p>
+<p>
+<a href ="http://onlinespiele.schmidtspiele.de/">www.onlinespiele.schmidtspiele.de<a/>
+</p>
+<p>
+Eine weitere Vorlage und Erklärung zu Kniffel und anderen Würfelspielen gibt es hier:
+</p>
+<p>
+<a href="http://www.wuerfelblog.de/wurfelspiel-kniffel/">www.wuerfelblog.de/wurfelspiel-kniffel<a/>
+</p>
+<p>
+Kniffel-Wurf-Wahrscheinlichkeiten
+Zur Errechnung der Wahrscheinlichkeiten habe ich gute Quellen gefunden:
+</p>
+<p>
+<a href ="http://www.brefeld.homepage.t-online.de/kniffel.html">www.brefeld.homepage.t-online.de/kniffel.html</a>
+</p>
+<p>
+<a href ="http://de.wikipedia.org/wiki/Kniffel#Wahrscheinlichkeiten">www.wikipedia.org/wiki/Kniffel#Wahrscheinlichkeiten</a>
+</p>
+</div>
+</div>
+  </body>
+</html>

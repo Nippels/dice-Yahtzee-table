@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+  }
+canvas {
+    display: block;
+  }
+table {
+    border-color: ;
+    background-color : #D8D8D8;
+    empty-cells: hide ;
+}
+.container {
+    overflow: visible;
+    margin-left: 1px;
+}
+tr {
+    background-color: #E6E6E6;
+    transition:all .25s ease-in-out;
+
+}
+tr input {
+    display: block;margin-bottom: 1px;
+
+}
+tr:hover {
+  background-color:#A9BCF5;cursor: pointer;
+}
+.gesamt:hover {
+  background-color:#A9BCF5;cursor: pointer;
+}
+.endsumme:hover {
+  background-color:#A9BCF5;cursor: pointer;
+}
+.gesamt{
+      background-color: #A4A4A4;
+}
+.endsumme{
+      background-color: #A4A4A4;
+}
+.help {
+  text-align: center;
+  margin-right: 100px;
+  border: 1px solid green;
+  border-width: medium;
+  border-color: black ;
+  background-color : #D8D8D8;
+}
+.help:hover {
+  background-color : #A9BCF5;
+}
